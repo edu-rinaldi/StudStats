@@ -14,7 +14,7 @@ public class Studente
     private int voto;
     private int annoDiploma;
 
-    public enum Sesso { M,F }
+    public static enum Sesso { M,F }
 
     public Studente(Sesso sesso, String nazioneDiNascita, String regioneDiNascita, String provinciaNascita,
                     String titoloDiStudio, String istitutoSuperiore, String comuneIstituto, int voto, int annoDiploma)
@@ -35,11 +35,11 @@ public class Studente
     public String getNazioneDiNascita() {return nazioneDiNascita;}
     public String getRegioneDiNascita() {return regioneDiNascita;}
     public String getProvinciaNascita() {return provinciaNascita;}
-    public String getTitoloDiStudio() {return titoloDiStudio;}
-    public String getIstitutoSuperiore() {return istitutoSuperiore;}
-    public String getComuneIstituto() {return comuneIstituto;}
+    public String getTitoloDiStudio()   {return titoloDiStudio;}
+    public String getIstitutoSuperiore(){return istitutoSuperiore;}
+    public String getComuneIstituto()   {return comuneIstituto;}
 
-    public int getVoto() {return voto;}
+    public int getVoto()        {return voto;}
     public int getAnnoDiploma() {return annoDiploma;}
 
     @Override
@@ -61,6 +61,13 @@ public class Studente
                 && provinciaNascita.equals(s.provinciaNascita) && titoloDiStudio.equals(s.titoloDiStudio)
                 && istitutoSuperiore.equals(s.istitutoSuperiore) && comuneIstituto.equals(s.comuneIstituto)
                 && voto == s.voto && annoDiploma == s.annoDiploma;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "[ "+sesso+", "+nazioneDiNascita+", "+regioneDiNascita+", "+provinciaNascita+", "+titoloDiStudio+", "+istitutoSuperiore+", "
+                +comuneIstituto+", "+voto+", "+annoDiploma+" ]";
     }
 
 }
