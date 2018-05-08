@@ -1,11 +1,13 @@
 package it.uniroma1.lcl.studstats;
 
+import it.uniroma1.lcl.studstats.dati.analizzatori.AnalizzatoreAnnoDiploma;
 import it.uniroma1.lcl.studstats.dati.Analizzatore;
 import it.uniroma1.lcl.studstats.dati.Rapporto;
 import it.uniroma1.lcl.studstats.dati.Studente;
 import it.uniroma1.lcl.studstats.dati.TipoRapporto;
 import it.uniroma1.lcl.studstats.util.CSVParser;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -18,7 +20,11 @@ public class Studstats implements AggregatoreStatistico
     private List<Analizzatore> analizzatori;
 
 
-    private Studstats() {this.studenti = new HashSet<>();}
+    private Studstats()
+    {
+        this.studenti = new HashSet<>();
+        this.analizzatori = new ArrayList<>();
+    }
     private Studstats(HashSet<Studente> studenti) {this.studenti = studenti;}
 
     @Override
@@ -27,12 +33,20 @@ public class Studstats implements AggregatoreStatistico
     @Override
     public void add(Analizzatore an) {analizzatori.add(an);}
 
-    //TODO: generaRapporti
     @Override
     public List<Rapporto> generaRapporti(TipoRapporto... tipiRapporto)
     {
-        List<Rapporto> listaRapporti;
-        return null;
+        List<Rapporto> listaRapporti = new ArrayList<>();
+
+        for(int i=0; i< tipiRapporto.length; i++)
+            for(Analizzatore an: analizzatori)
+            {
+                Rapporto tmpRapporto = an.generaRapporto(studenti);
+                if (tmpRapporto.getTipoRapporto() == tipiRapporto[i])
+                    listaRapporti.add(tmpRapporto);
+            }
+
+        return listaRapporti;
     }
 
 
@@ -52,12 +66,4 @@ public class Studstats implements AggregatoreStatistico
     //getter
     public HashSet<Studente> getStudenti() {return studenti;}
     public List<Analizzatore> getAnalizzatori() {return analizzatori;}
-
-    public static void main(String[] args)
-    {
-        Studstats s = Studstats.fromFile("src/it/uniroma1/lcl/studstats/IMMATRICOLATI_INFORMATICA_SAPIENZA_2018_randomizzato.csv");
-        for(Studente s1: s.studenti) System.out.println(s1);
-    }
-
-
 }

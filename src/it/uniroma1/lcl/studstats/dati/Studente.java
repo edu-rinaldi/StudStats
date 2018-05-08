@@ -18,4 +18,7 @@ public class Studente
 
     @Override
     public String toString() {return info.toString();}
+
+
+    public Map<String, String> getInfo() {return info;}
 }
