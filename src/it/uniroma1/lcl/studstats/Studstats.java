@@ -4,20 +4,21 @@ import it.uniroma1.lcl.studstats.dati.Analizzatore;
 import it.uniroma1.lcl.studstats.dati.Rapporto;
 import it.uniroma1.lcl.studstats.dati.Studente;
 import it.uniroma1.lcl.studstats.dati.TipoRapporto;
+import it.uniroma1.lcl.studstats.util.CSVParser;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 
 public class Studstats implements AggregatoreStatistico
 {
-
     private HashSet<Studente> studenti;
+
     //TODO: Togliere List e mettere HashSet per gli analizzatori
     private List<Analizzatore> analizzatori;
 
+
+    private Studstats() {this.studenti = new HashSet<>();}
     private Studstats(HashSet<Studente> studenti) {this.studenti = studenti;}
 
     @Override
@@ -30,39 +31,22 @@ public class Studstats implements AggregatoreStatistico
     @Override
     public List<Rapporto> generaRapporti(TipoRapporto... tipiRapporto)
     {
+        List<Rapporto> listaRapporti;
         return null;
     }
-    //TODO: fromFile
+
+
     public static Studstats fromFile(String file)
     {
-        boolean primo = true;
-        HashSet<Studente> setStudenti = new HashSet<>();
+        //nuova istanza Studstats
+        Studstats stats = new Studstats();
+        //parse del file
+        CSVParser parser = new CSVParser(file);
+        HashSet<Map> setMappe = new HashSet<>(parser.parseFile());
 
-        try(BufferedReader br = new BufferedReader(new FileReader(file)))
-        {
+        for(Map mappaStudente: setMappe) stats.add(new Studente(mappaStudente));
 
-            while(br.ready())
-            {
-                String[] dati = br.readLine().split(";");
-                if (primo)
-                {
-                    primo=false;
-                    continue;
-                }
-                for(int i=0; i<dati.length; i++)
-                    if(dati[i].equals("")) dati[i] = null;
-                setStudenti.add(new Studente(Studente.Sesso.valueOf(dati[0]), dati[1], dati[2], dati[3], dati[4], dati[5],
-                        dati[6], Integer.parseInt(dati[7]), Integer.parseInt(dati[8])));
-            }
-        }
-        catch(IOException e)
-        {
-            // gestisci l’eccezione di I/O
-            System.out.println(e);
-        }
-
-        return new Studstats(setStudenti);
-
+        return stats;
     }
 
     //getter
@@ -71,8 +55,9 @@ public class Studstats implements AggregatoreStatistico
 
     public static void main(String[] args)
     {
-        Studstats s = Studstats.fromFile("src/it/uniroma1/lcl/studstats/");
+        Studstats s = Studstats.fromFile("src/it/uniroma1/lcl/studstats/IMMATRICOLATI_INFORMATICA_SAPIENZA_2018_randomizzato.csv");
         for(Studente s1: s.studenti) System.out.println(s1);
     }
+
 
 }

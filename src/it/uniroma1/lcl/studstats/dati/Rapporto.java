@@ -28,4 +28,5 @@ public class Rapporto
         this.rapporto = rapporto;
     }
 
+
 }
