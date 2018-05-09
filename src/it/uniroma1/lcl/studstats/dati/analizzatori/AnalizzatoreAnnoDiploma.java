@@ -21,6 +21,7 @@ public class AnalizzatoreAnnoDiploma implements Analizzatore
         HashMap<String, TreeMap<Integer, Integer>> mappa = new HashMap<>();
         TreeMap<Integer, Integer> mappaInterna = new TreeMap<>((x,y)->-x.compareTo(y));
 
+
         for(Studente st: studs)
         {
             int info = Integer.parseInt(st.getInfo().get("ANNO_DIPLOMA"));

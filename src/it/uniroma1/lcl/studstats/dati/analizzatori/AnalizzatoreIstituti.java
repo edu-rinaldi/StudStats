@@ -5,8 +5,6 @@ import it.uniroma1.lcl.studstats.dati.Rapporto;
 import it.uniroma1.lcl.studstats.dati.Studente;
 
 import java.util.Collection;
-import java.util.HashMap;
-import java.util.TreeMap;
 
 public class AnalizzatoreIstituti implements Analizzatore
 {

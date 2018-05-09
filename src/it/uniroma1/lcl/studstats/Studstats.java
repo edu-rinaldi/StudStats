@@ -1,6 +1,5 @@
 package it.uniroma1.lcl.studstats;
 
-import it.uniroma1.lcl.studstats.dati.analizzatori.AnalizzatoreAnnoDiploma;
 import it.uniroma1.lcl.studstats.dati.Analizzatore;
 import it.uniroma1.lcl.studstats.dati.Rapporto;
 import it.uniroma1.lcl.studstats.dati.Studente;
@@ -54,12 +53,12 @@ public class Studstats implements AggregatoreStatistico
     {
         //nuova istanza Studstats
         Studstats stats = new Studstats();
+
         //parse del file
         CSVParser parser = new CSVParser(file);
         HashSet<Map> setMappe = new HashSet<>(parser.parseFile());
 
-        for(Map mappaStudente: setMappe) stats.add(new Studente(mappaStudente));
-
+        setMappe.forEach(mappaStudente-> stats.add(new Studente(mappaStudente)));
         return stats;
     }
 

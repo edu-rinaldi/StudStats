@@ -10,6 +10,7 @@ import java.util.Map;
 import java.util.Collection;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.stream.Stream;
 
 public class CSVParser
 {
@@ -17,6 +18,7 @@ public class CSVParser
 
     public CSVParser(String filePath) {this(Paths.get(filePath)); }
     public CSVParser(Path filePath) {this.file = filePath;}
+
 
 
     //ritorna una collezione di mappe, una mappa per ogni record
@@ -39,7 +41,6 @@ public class CSVParser
 
                 //prendo ogni riga, la splitto per ";"
                 String[] infos = br.readLine().split(";");
-
                 //creo una nuova mappa temp.
                 HashMap<String, String> mappa = new HashMap<>();
 
@@ -49,7 +50,7 @@ public class CSVParser
                 mapCollection.add(mappa);
             }
         }
-        catch(IOException e) {System.out.println(e);}
+        catch(IOException e) {e.printStackTrace();}
         return mapCollection;
     }
 

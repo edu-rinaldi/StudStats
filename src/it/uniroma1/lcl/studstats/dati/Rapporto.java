@@ -1,6 +1,5 @@
 package it.uniroma1.lcl.studstats.dati;
 
-import java.util.Collection;
 import java.util.HashMap;
 
 public class Rapporto
@@ -16,9 +15,7 @@ public class Rapporto
         TITOLO,
         VOTO,
         VOTO_MAGGIORE;
-
     }
-
 
 
     public Rapporto(TipoRapporto tipoRapporto, HashMap rapporto)
