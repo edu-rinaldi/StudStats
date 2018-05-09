@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23ab655b-d80e-4a26-863c-bd0da145bb23" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/Analizzatori.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/Prova.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/analizzatori/AnalizzatoriSemplici.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/Studstats.class" afterPath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/Studstats.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/Rapporto.class" afterPath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/Rapporto.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/analizzatori/AnalizzatoreAnnoDiploma.class" afterPath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/analizzatori/AnalizzatoreAnnoDiploma.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/analizzatori/AnalizzatoreIstituti.class" afterPath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/analizzatori/AnalizzatoreIstituti.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/util/CSVParser.class" afterPath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/util/CSVParser.class" />
-      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/Studstats.java" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/Studstats.java" />
       <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/Analizzatore.java" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/Analizzatore.java" />
-      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/Rapporto.java" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/Rapporto.java" />
-      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/TipoRapporto.java" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/TipoRapporto.java" />
-      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/analizzatori/AnalizzatoreAnnoDiploma.java" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/analizzatori/AnalizzatoreAnnoDiploma.java" />
-      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/analizzatori/AnalizzatoreIstituti.java" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/analizzatori/AnalizzatoreIstituti.java" />
-      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/util/CSVParser.java" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/util/CSVParser.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,8 +75,8 @@
       <file leaf-file-name="Analizzatore.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/Analizzatore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="120">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -475,12 +461,20 @@
       <workItem from="1525770660464" duration="936000" />
       <workItem from="1525786517112" duration="8377000" />
       <workItem from="1525859885313" duration="792000" />
-      <workItem from="1525863738977" duration="9989000" />
+      <workItem from="1525863738977" duration="10251000" />
     </task>
+    <task id="LOCAL-00001" summary="Ho fatot qualcosa">
+      <created>1525874608661</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1525874608677</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49242000" />
+    <option name="totallyTimeSpent" value="49504000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -493,6 +487,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24671052" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -507,7 +502,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.4978678" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20877458" sideWeight="0.49565217" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20877458" sideWeight="0.49565217" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -528,6 +523,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ho fatot qualcosa" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ho fatot qualcosa" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -937,8 +936,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/Analizzatore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="120">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
