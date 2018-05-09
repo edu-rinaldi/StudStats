@@ -1,11 +1,10 @@
 package it.uniroma1.lcl.studstats;
 
-import it.uniroma1.lcl.studstats.dati.Analizzatore;
-import it.uniroma1.lcl.studstats.dati.Rapporto;
-import it.uniroma1.lcl.studstats.dati.Studente;
-import it.uniroma1.lcl.studstats.dati.TipoRapporto;
+import it.uniroma1.lcl.studstats.dati.*;
 import it.uniroma1.lcl.studstats.util.CSVParser;
 
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -15,7 +14,6 @@ public class Studstats implements AggregatoreStatistico
 {
     private HashSet<Studente> studenti;
 
-    //TODO: Togliere List e mettere HashSet per gli analizzatori
     private List<Analizzatore> analizzatori;
 
 
@@ -40,9 +38,13 @@ public class Studstats implements AggregatoreStatistico
         for(int i=0; i< tipiRapporto.length; i++)
             for(Analizzatore an: analizzatori)
             {
-                Rapporto tmpRapporto = an.generaRapporto(studenti);
-                if (tmpRapporto.getTipoRapporto() == tipiRapporto[i])
-                    listaRapporti.add(tmpRapporto);
+               try{
+                   if(an.getTipo().equals(tipiRapporto[i].toString()))
+                       listaRapporti.add(an.generaRapporto(studenti));
+               }catch (Exception e)
+               {
+                   continue;
+               }
             }
 
         return listaRapporti;

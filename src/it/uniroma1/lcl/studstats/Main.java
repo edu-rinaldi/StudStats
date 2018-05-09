@@ -1,7 +1,9 @@
 package it.uniroma1.lcl.studstats;
 
 import it.uniroma1.lcl.studstats.dati.Rapporto;
-import it.uniroma1.lcl.studstats.dati.analizzatori.AnalizzatoreAnnoDiploma;
+//import it.uniroma1.lcl.studstats.dati.analizzatori.AnalizzatoreAnnoDiploma;
+import it.uniroma1.lcl.studstats.dati.analizzatori.AnalizzatoreIstituti;
+import it.uniroma1.lcl.studstats.dati.analizzatori.Analizzatori;
 
 public class Main
 {
@@ -9,8 +11,9 @@ public class Main
     {
         Studstats s = Studstats.fromFile("src/it/uniroma1/lcl/studstats/IMMATRICOLATI_INFORMATICA_SAPIENZA_2018_randomizzato.csv");
         //for(Studente s1: s.studenti) System.out.println(s1);
-        s.add(new AnalizzatoreAnnoDiploma());
+        //s.add(Analizzatori.AnalizzatoreAnnoDiploma);
+        s.add(new AnalizzatoreIstituti());
 
-        System.out.println(s.generaRapporti(Rapporto.RapportoSemplice.ANNO_DIPLOMA));
+        System.out.println(s.generaRapporti(Rapporto.RapportoSemplice.ANNO_DIPLOMA, Rapporto.RapportoSemplice.ISTITUTI));
     }
 }

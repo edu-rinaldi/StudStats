@@ -1,20 +1,15 @@
+/*
 package it.uniroma1.lcl.studstats.dati.analizzatori;
 
-import it.uniroma1.lcl.studstats.dati.Analizzatore;
-import it.uniroma1.lcl.studstats.dati.Rapporto;
-import it.uniroma1.lcl.studstats.dati.Studente;
-import it.uniroma1.lcl.studstats.dati.TipoRapporto;
+import it.uniroma1.lcl.studstats.dati.*;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.TreeMap;
 
+@Tipo(tipo= Rapporto.RapportoSemplice.ANNO_DIPLOMA)
 public class AnalizzatoreAnnoDiploma implements Analizzatore
 {
-    public final TipoRapporto tipoRapportoGenerato;
-
-    public AnalizzatoreAnnoDiploma() { this.tipoRapportoGenerato = Rapporto.RapportoSemplice.ANNO_DIPLOMA;}
-
     @Override
     public Rapporto generaRapporto(Collection<Studente> studs)
     {
@@ -33,6 +28,5 @@ public class AnalizzatoreAnnoDiploma implements Analizzatore
         return new Rapporto(Rapporto.RapportoSemplice.ANNO_DIPLOMA, mappa);
     }
 
-    public TipoRapporto getTipoRapportoGenerato() {return tipoRapportoGenerato;}
-
 }
+*/
