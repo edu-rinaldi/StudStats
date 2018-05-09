@@ -20,7 +20,6 @@ public class CSVParser
     public CSVParser(Path filePath) {this.file = filePath;}
 
 
-
     //ritorna una collezione di mappe, una mappa per ogni record
     public Collection<Map> parseFile()
     {
