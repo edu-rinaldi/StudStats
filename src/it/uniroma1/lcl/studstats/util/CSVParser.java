@@ -50,6 +50,7 @@ public class CSVParser
             }
         }
         catch(IOException e) {e.printStackTrace();}
+
         return mapCollection;
     }
 

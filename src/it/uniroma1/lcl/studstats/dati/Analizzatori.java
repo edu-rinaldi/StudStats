@@ -1,4 +1,4 @@
-package it.uniroma1.lcl.studstats.dati.analizzatori;
+package it.uniroma1.lcl.studstats.dati;
 
 import it.uniroma1.lcl.studstats.dati.Analizzatore;
 import it.uniroma1.lcl.studstats.dati.Rapporto;
@@ -6,8 +6,7 @@ import it.uniroma1.lcl.studstats.dati.Studente;
 import it.uniroma1.lcl.studstats.dati.Tipo;
 
 
-import java.util.HashMap;
-import java.util.TreeMap;
+import java.util.*;
 
 
 public class Analizzatori
@@ -35,9 +34,8 @@ public class Analizzatori
     @Tipo(tipo = "ISTITUTI")
     public static final Analizzatore analizzatoreIstituti = studs ->
     {
-        HashMap<String, TreeMap<String, Integer>> mappa = new HashMap<>();
-        TreeMap<String, Integer> mappaInterna = new TreeMap<>();
-
+        HashMap<String, LinkedHashMap<String, Integer>> mappa = new HashMap<>();
+        LinkedHashMap<String, Integer> mappaInterna = new LinkedHashMap<>();
 
         for(Studente st: studs)
         {
@@ -46,13 +44,14 @@ public class Analizzatori
             else mappaInterna.put(info,1);
         }
 
+        List<Map.Entry<String,Integer>> entryList = new ArrayList<>(mappaInterna.entrySet());
+        mappaInterna.clear();
+
+        entryList.stream()
+                .sorted((e1,e2)-> -e1.getValue().compareTo(e2.getValue()))
+                .forEach(e-> mappaInterna.put(e.getKey(),e.getValue()));
+
         mappa.put("ISTITUTO_SUPERIORE", mappaInterna);
         return new Rapporto(Rapporto.RapportoSemplice.ISTITUTI, mappa);
     };
-
-    public static void main(String[] args)
-    {
-        System.out.println(Analizzatori.AnalizzatoreAnnoDiploma.getClass().getDeclaredMethods()[0].getAnnotation(Tipo.class));
-    }
-
 }

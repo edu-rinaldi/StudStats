@@ -3,8 +3,6 @@ package it.uniroma1.lcl.studstats;
 import it.uniroma1.lcl.studstats.dati.*;
 import it.uniroma1.lcl.studstats.util.CSVParser;
 
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -38,18 +36,15 @@ public class Studstats implements AggregatoreStatistico
         for(int i=0; i< tipiRapporto.length; i++)
             for(Analizzatore an: analizzatori)
             {
-               try{
-                   if(an.getTipo().equals(tipiRapporto[i].toString()))
-                       listaRapporti.add(an.generaRapporto(studenti));
-               }catch (Exception e)
-               {
-                   continue;
-               }
+               Rapporto tmpRapporto = an.generaRapporto(studenti);
+               if(tmpRapporto.getTipoRapporto() == tipiRapporto[i])
+                   listaRapporti.add(tmpRapporto);
             }
 
         return listaRapporti;
     }
 
+    public List<Rapporto> generaRapporti(){ return generaRapporti(Rapporto.RapportoSemplice.values()); }
 
     public static Studstats fromFile(String file)
     {
