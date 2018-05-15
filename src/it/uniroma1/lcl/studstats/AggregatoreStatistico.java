@@ -28,4 +28,15 @@ public interface AggregatoreStatistico
      * @return la lista dei rapporti generati
      */
     List<Rapporto> generaRapporti(TipoRapporto... tipiRapporto);
+
+    /**
+     * @return il numero di analizzatori aggiunti all'aggregatore statistico
+     */
+    int numeroAnalizzatori();
+
+    default void addAll(Analizzatore... analizzatori)
+    {
+        for (Analizzatore a : analizzatori) add(a);
+    }
+
 }

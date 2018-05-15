@@ -2,23 +2,12 @@ package it.uniroma1.lcl.studstats.dati;
 
 import java.util.HashMap;
 
-public class Rapporto
+public class Rapporto<K,V>
 {
     private TipoRapporto tipoRapporto;
-    private HashMap rapporto;
+    private HashMap<K,V> rapporto;
 
-    public enum RapportoSemplice implements TipoRapporto
-    {
-        ANNO_DIPLOMA,
-        ISTITUTI,
-        SESSO,
-        TITOLO,
-        VOTO,
-        VOTO_MAGGIORE;
-    }
-
-
-    public Rapporto(TipoRapporto tipoRapporto, HashMap rapporto)
+    public Rapporto(TipoRapporto tipoRapporto, HashMap<K,V> rapporto)
     {
         this.tipoRapporto = tipoRapporto;
         this.rapporto = rapporto;
@@ -27,6 +16,6 @@ public class Rapporto
     @Override
     public String toString() {return rapporto.toString();}
 
-    public HashMap getRapporto() {return rapporto;}
+    public HashMap<K,V> getRapporto() {return rapporto;}
     public TipoRapporto getTipoRapporto() {return tipoRapporto;}
 }

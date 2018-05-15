@@ -1,65 +1,65 @@
 package it.uniroma1.lcl.studstats;
 
 import it.uniroma1.lcl.studstats.dati.*;
+import it.uniroma1.lcl.studstats.dati.rapporti.RapportoBase;
 import it.uniroma1.lcl.studstats.util.CSVParser;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
+import java.nio.file.Path;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Studstats implements AggregatoreStatistico
 {
-    private HashSet<Studente> studenti;
-
+    private List<Studente> studenti;
     private List<Analizzatore> analizzatori;
-
 
     private Studstats()
     {
-        this.studenti = new HashSet<>();
+        this.studenti = new ArrayList<>();
         this.analizzatori = new ArrayList<>();
     }
-    private Studstats(HashSet<Studente> studenti) {this.studenti = studenti;}
 
     @Override
     public void add(Studente s) {studenti.add(s);}
 
     @Override
-    public void add(Analizzatore an) {analizzatori.add(an);}
+    public void add(Analizzatore an) {analizzatori.add(an); }
 
     @Override
     public List<Rapporto> generaRapporti(TipoRapporto... tipiRapporto)
     {
-        List<Rapporto> listaRapporti = new ArrayList<>();
-
-        for(int i=0; i< tipiRapporto.length; i++)
-            for(Analizzatore an: analizzatori)
-            {
-               Rapporto tmpRapporto = an.generaRapporto(studenti);
-               if(tmpRapporto.getTipoRapporto() == tipiRapporto[i])
-                   listaRapporti.add(tmpRapporto);
-            }
-
-        return listaRapporti;
+        return analizzatori.stream()
+                            .filter(an-> Stream.of(tipiRapporto).anyMatch(tR -> tR == an.getTipo()))
+                            .map(an -> an.generaRapporto(studenti))
+                            .collect(Collectors.toList());
     }
 
-    public List<Rapporto> generaRapporti(){ return generaRapporti(Rapporto.RapportoSemplice.values()); }
+    //TODO: Chiedere al prof
+    public List<Rapporto> generaRapporti()
+    {
+        return generaRapporti(analizzatori.stream()
+                .map(Analizzatore::getTipo)
+                .toArray(TipoRapporto[]::new));
+    }
 
-    public static Studstats fromFile(String file)
+    @Override
+    public int numeroAnalizzatori() {return analizzatori.size(); }
+
+    public static Studstats fromFile(String file) {return  readFile(new CSVParser(file)); }
+
+    public static Studstats fromFile(Path file) {return readFile(new CSVParser(file)); }
+
+    private static Studstats readFile(CSVParser parser)
     {
         //nuova istanza Studstats
         Studstats stats = new Studstats();
-
-        //parse del file
-        CSVParser parser = new CSVParser(file);
-        HashSet<Map> setMappe = new HashSet<>(parser.parseFile());
-
-        setMappe.forEach(mappaStudente-> stats.add(new Studente(mappaStudente)));
+        new ArrayList<>(parser.parseFile())
+                .forEach(mappaStudente-> stats.add(new Studente(mappaStudente)));
         return stats;
     }
 
     //getter
-    public HashSet<Studente> getStudenti() {return studenti;}
+    public List<Studente> getStudenti() {return studenti;}
     public List<Analizzatore> getAnalizzatori() {return analizzatori;}
 }

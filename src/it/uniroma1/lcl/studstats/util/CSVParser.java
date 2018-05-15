@@ -21,23 +21,17 @@ public class CSVParser
 
 
     //ritorna una collezione di mappe, una mappa per ogni record
-    public Collection<Map> parseFile()
+    public Collection<HashMap<String,String>> parseFile()
     {
         boolean primo = true;
         String[] keys = null;
-        Collection<Map> mapCollection = new ArrayList<>();
+        Collection<HashMap<String,String>> mapCollection = new ArrayList<>();
 
         try(BufferedReader br = Files.newBufferedReader(file))
         {
+            keys = br.readLine().split(";");
             while(br.ready())
             {
-                if (primo)
-                {
-                    keys = br.readLine().split(";");
-                    primo = false;
-                    continue;
-                }
-
                 //prendo ogni riga, la splitto per ";"
                 String[] infos = br.readLine().split(";");
                 //creo una nuova mappa temp.
@@ -45,12 +39,10 @@ public class CSVParser
 
                 //faccio il mapping
                 for(int i=0; i<infos.length; i++) mappa.put(keys[i], infos[i]);
-
                 mapCollection.add(mappa);
             }
         }
         catch(IOException e) {e.printStackTrace();}
-
         return mapCollection;
     }
 
