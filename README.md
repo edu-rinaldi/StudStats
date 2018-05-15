@@ -1,6 +1,6 @@
 # StudStats
 Homework "Metodologie di programmazione 2017/2018"
 En:
-Student's statistic analyzer from csv.
+Student's statistic analyzer from csv.\n
 IT:
 Analizzatore di un foglio csv contenente diverse info sui vari studenti.
