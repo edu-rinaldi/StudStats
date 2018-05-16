@@ -23,7 +23,6 @@ public class CSVParser
     //ritorna una collezione di mappe, una mappa per ogni record
     public Collection<HashMap<String,String>> parseFile()
     {
-        boolean primo = true;
         String[] keys = null;
         Collection<HashMap<String,String>> mapCollection = new ArrayList<>();
 

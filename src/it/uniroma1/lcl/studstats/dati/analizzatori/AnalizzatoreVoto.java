@@ -21,7 +21,7 @@ public class AnalizzatoreVoto implements Analizzatore
             .mapToInt(studente -> Integer.parseInt(studente.get("MaxDiVOTO")))
             .sorted();
 
-        double media = streamVoti.get().sum()/studs.size();
+        double media = (double)streamVoti.get().sum()/studs.size();
         int votoMin = streamVoti.get().min().orElse(0);
         int votoMax = streamVoti.get().max().orElse(0);
         double mediana = studs.size()%2==1 ? streamVoti.get().skip(studs.size()/2).findFirst().orElse(0):

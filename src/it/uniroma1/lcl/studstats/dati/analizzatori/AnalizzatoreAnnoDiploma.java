@@ -22,4 +22,5 @@ public class AnalizzatoreAnnoDiploma extends AnalizzatoreBasic implements Analiz
 
     @Override
     public TipoRapporto getTipo() {return RapportoBase.ANNO_DIPLOMA; }
+
 }
