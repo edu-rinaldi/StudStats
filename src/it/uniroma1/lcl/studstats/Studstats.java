@@ -9,15 +9,16 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+//TODO: JavaDoc
 public class Studstats implements AggregatoreStatistico
 {
     private List<Studente> studenti;
-    private List<Analizzatore> analizzatori;
+    private LinkedHashSet<Analizzatore> analizzatori;
 
     private Studstats()
     {
         this.studenti = new ArrayList<>();
-        this.analizzatori = new ArrayList<>();
+        this.analizzatori = new LinkedHashSet<>();
     }
 
     @Override
@@ -35,7 +36,6 @@ public class Studstats implements AggregatoreStatistico
                             .collect(Collectors.toList());
     }
 
-    //TODO: Chiedere al prof
     public List<Rapporto> generaRapporti()
     {
         return generaRapporti(analizzatori.stream()
@@ -61,5 +61,5 @@ public class Studstats implements AggregatoreStatistico
 
     //getter
     public List<Studente> getStudenti() {return studenti;}
-    public List<Analizzatore> getAnalizzatori() {return analizzatori;}
+    public LinkedHashSet<Analizzatore> getAnalizzatori() {return analizzatori;}
 }

@@ -7,9 +7,9 @@ import static java.util.stream.Collectors.*;
 
 public abstract class AnalizzatoreBasic
 {
-    protected HashMap<String,Long> generaMappaInterna(Collection<Studente> studs, String tipo)
+    protected HashMap<String,Long> generaMappaInterna(Collection<Studente> studs, String key)
     {
-        return studs.stream().collect(groupingBy(x -> x.get(tipo), HashMap::new, counting()));
+        return studs.stream().collect(groupingBy(x -> x.get(key), HashMap::new, counting()));
     }
 
     protected LinkedHashMap<String,Long> generaMappaInternaOrdinata(Collection<Studente> studs, String tipo)

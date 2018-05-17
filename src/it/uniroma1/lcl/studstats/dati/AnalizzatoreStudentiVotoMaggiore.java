@@ -1,11 +1,8 @@
-package it.uniroma1.lcl.studstats.dati.analizzatori;
+package it.uniroma1.lcl.studstats.dati;
 
-import it.uniroma1.lcl.studstats.dati.Analizzatore;
-import it.uniroma1.lcl.studstats.dati.Rapporto;
-import it.uniroma1.lcl.studstats.dati.Studente;
-import it.uniroma1.lcl.studstats.dati.TipoRapporto;
-
+import it.uniroma1.lcl.studstats.dati.rapporti.RapportoBase;
 import java.util.Collection;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class AnalizzatoreStudentiVotoMaggiore implements Analizzatore
@@ -34,8 +31,17 @@ public class AnalizzatoreStudentiVotoMaggiore implements Analizzatore
     }
 
     @Override
-    public TipoRapporto getTipo()
+    public TipoRapporto getTipo() {return RapportoBase.VOTO_MAGGIORE; }
+
+    @Override
+    public boolean equals(Object o)
     {
-        return null;
+        if(this == o) return true;
+        if (o == null || o.getClass() != this.getClass()) return false;
+        AnalizzatoreStudentiVotoMaggiore an = (AnalizzatoreStudentiVotoMaggiore)o;
+        return votoMinimo == an.votoMinimo && analizzatore.equals(an.analizzatore);
     }
+
+    @Override
+    public int hashCode() {return Objects.hash(votoMinimo, analizzatore); }
 }
