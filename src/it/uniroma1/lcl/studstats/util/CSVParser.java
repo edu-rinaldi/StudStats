@@ -12,18 +12,40 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.stream.Stream;
 
+/**
+ * @author eduardo_rinaldi
+ *
+ * Parser di file CSV su una Collezione di righe.
+ * Queste sono rappresentate come mappe con coppia chiave-valore
+ * del tipo {@code <colonna,valore>}, così da ottenere una tabella.
+ */
 public class CSVParser
 {
     private Path file;
 
+    /**
+     * Costruisce un oggetto CSVParser a partire da un
+     * uno String path locale o assoluto al file .csv
+     * @param filePath di tipo String
+     */
     public CSVParser(String filePath) {this(Paths.get(filePath)); }
+
+    /**
+     * Costruisce un oggetto CSVParser a partire da un
+     * oggetto Path che contiene un percorso locale o
+     * assoluto al file .csv
+     * @param filePath di tipo
+     */
     public CSVParser(Path filePath) {this.file = filePath;}
 
 
-    //ritorna una collezione di mappe, una mappa per ogni record
+    /**
+     *
+     * @return una collezione di mappe, dove ogni mappa è una riga del file
+     */
     public Collection<HashMap<String,String>> parseFile()
     {
-        String[] keys = null;
+        String[] keys;
         Collection<HashMap<String,String>> mapCollection = new ArrayList<>();
 
         try(BufferedReader br = Files.newBufferedReader(file))

@@ -48,8 +48,8 @@ class StudstatsTest
     {
         System.out.print("-- testAdd: ");
         stats.addAll(Analizzatori.allBasic());
-        stats.add(new AnalizzatoreStudentiVotoMaggiore(80));
-        stats.add(new AnalizzatoreStudentiVotoMaggiore(70));
+        stats.add(Analizzatori.studentiVotoMaggiore(80));
+        stats.add(Analizzatori.studentiVotoMaggiore(70));
         try {
             assertEquals(stats.numeroAnalizzatori(), 7);
             System.out.println("OK!");
@@ -60,10 +60,10 @@ class StudstatsTest
     {
         System.out.print("-- testEqualsHashCode: ");
         stats.addAll(Analizzatori.allBasic());
-        stats.add(new AnalizzatoreStudentiVotoMaggiore(80));
-        stats.add(new AnalizzatoreStudentiVotoMaggiore(80, new AnalizzatoreSesso()));
-        stats.add(new AnalizzatoreStudentiVotoMaggiore(80, new AnalizzatoreIstituti()));
-        stats.add(new AnalizzatoreStudentiVotoMaggiore(70));
+        stats.add(Analizzatori.studentiVotoMaggiore(80));
+        stats.add(Analizzatori.studentiVotoMaggiore(80, new AnalizzatoreSesso()));
+        stats.add(Analizzatori.studentiVotoMaggiore(80, new AnalizzatoreIstituti()));
+        stats.add(Analizzatori.studentiVotoMaggiore(70));
         try {
             assertEquals(stats.numeroAnalizzatori(), 8);
             System.out.println("OK!");
@@ -110,7 +110,7 @@ class StudstatsTest
         stats.addAll(Analizzatori.allBasic());
 
         System.out.print("-- testGeneraRapportiTipoSesso: ");
-        Rapporto r = stats.generaRapporti(new AnalizzatoreSesso().getTipo())
+        Rapporto r = stats.generaRapporti(Analizzatori.sesso().getTipo())
                 .get(0);
 
         try {
@@ -125,7 +125,7 @@ class StudstatsTest
         System.out.print("-- testGeneraRapportiSegretoSegretissimo: ");
         stats.addAll(Analizzatori.allBasic());
         stats.add(new AnalizzatoreSegretoSegretissimo());
-        for (Rapporto r : stats.generaRapporti(new AnalizzatoreVoto().getTipo(), new AnalizzatoreSegretoSegretissimo().getTipo()))
+        for (Rapporto r : stats.generaRapporti(Analizzatori.voto().getTipo(), new AnalizzatoreSegretoSegretissimo().getTipo()))
             System.out.print(r+"; ");
         System.out.println(" OK! [da verificare a mano]");
     }
@@ -137,9 +137,9 @@ class StudstatsTest
 
     static Map<String, Map<String, String>> toMap(String mappa)
     {
-        Pattern re = Pattern.compile("([A-Z]+) *= *\\{([^\\}]+)\\}");
+        Pattern re = Pattern.compile("([A-Z_]+) *= *\\{([^\\}]+)\\}");
         Matcher m = re.matcher(mappa);
-        Pattern re2 = Pattern.compile("([a-zA-Z_-]+) *= *([^,]+)");
+        Pattern re2 = Pattern.compile("([a-zA-Z0-9-]+) *= *([^,]+)");
 
         Map<String, Map<String, String>> result = new TreeMap<>();
 

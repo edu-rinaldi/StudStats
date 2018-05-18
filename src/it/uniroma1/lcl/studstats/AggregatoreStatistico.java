@@ -34,6 +34,10 @@ public interface AggregatoreStatistico
      */
     int numeroAnalizzatori();
 
+    /**
+     * Aggiunge tutti gli analizzatori passati come parametro al set di analizzatori
+     * @param analizzatori un numero variabile di analizzatori
+     */
     default void addAll(Analizzatore... analizzatori)
     {
         for (Analizzatore a : analizzatori) add(a);
