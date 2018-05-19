@@ -1,6 +1,6 @@
-package it.uniroma1.lcl.studstats.dati.analizzatori;
+package it.uniroma1.lcl.studstats.dati;
 
-import it.uniroma1.lcl.studstats.dati.Studente;
+
 import java.util.*;
 import static java.util.stream.Collectors.*;
 

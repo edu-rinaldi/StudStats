@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"it.uniroma1.lcl.studstats"},{"l":"it.uniroma1.lcl.studstats.dati"},{"l":"it.uniroma1.lcl.studstats.dati.analizzatori"},{"l":"it.uniroma1.lcl.studstats.dati.rapporti"},{"l":"it.uniroma1.lcl.studstats.util"}]
+packageSearchIndex = [{"l":"it.uniroma1.lcl.studstats"},{"l":"it.uniroma1.lcl.studstats.dati"},{"l":"it.uniroma1.lcl.studstats.dati.rapporti"},{"l":"it.uniroma1.lcl.studstats.util"}]
