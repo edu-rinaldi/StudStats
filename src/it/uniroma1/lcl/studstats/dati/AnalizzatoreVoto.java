@@ -14,7 +14,7 @@ import java.util.stream.IntStream;
  *     <li>voto medio</li>
  *     <li>voto mediano</li>
  *     <li>voto minimo</li>
- *     <li>voto ma</li>
+ *     <li>voto massimo</li>
  * </ul>
  */
 public class AnalizzatoreVoto implements Analizzatore
@@ -74,7 +74,7 @@ public class AnalizzatoreVoto implements Analizzatore
     }
 
     /**
-     *
+     * Genera un Rapporto analizzando la collezione di studenti.
      * @param studs una collezione di studenti
      * @return un oggetto Rapporto contenente tutte le info sul rapporto generato
      */
@@ -87,7 +87,15 @@ public class AnalizzatoreVoto implements Analizzatore
     }
 
     /**
-     *
+     * Genera la "mappaInterna" ovvero la mappa che per ogni collezione
+     * di studente che viene data in input contiene informazioni
+     * riguardo:
+     * <ul>
+     *     <li>Voto medio</li>
+     *     <li>Voto mediano</li>
+     *     <li>Voto minimo</li>
+     *     <li>Voto massimo</li>
+     * </ul>
      * @param studs collezione di studenti
      * @return la mappa più interna all'interno di un rapporto
      */
@@ -106,7 +114,7 @@ public class AnalizzatoreVoto implements Analizzatore
                         "VOTO_MIN", votoMin, "VOTO_MEDIANO", mediana));
     }
     /**
-     *
+     * Restituisce il tipo del rapporto che andrà a generare.
      * @return il tipo del rapporto che genera, ovvero <strong>VOTO</strong>
      */
     @Override

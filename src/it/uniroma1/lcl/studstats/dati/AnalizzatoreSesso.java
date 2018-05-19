@@ -7,15 +7,16 @@ import java.util.HashMap;
 import java.util.Objects;
 
 /**
- * Analizza gli studenti in base all'istituto superiore che hanno frequentato.
+ * Analizza gli studenti in base al sesso andando a contare
+ * quanti maschi e quante femmine ci sono.
  */
 public class AnalizzatoreSesso extends AnalizzatoreBasic implements Analizzatore
 {
 
     /**
-     *
+     * Genera un Rapporto analizzando la collezione di studenti.
      * @param studs una collezione di studenti.
-     * @return un oggetto Rapporto contenente tutte le info sul rapporto generato
+     * @return un oggetto Rapporto contenente tutte le info sul rapporto generato.
      */
     @Override
     public Rapporto generaRapporto(Collection<Studente> studs)
@@ -26,7 +27,7 @@ public class AnalizzatoreSesso extends AnalizzatoreBasic implements Analizzatore
     }
 
     /**
-     *
+     * Restituisce il tipo del rapporto che andrà a generare.
      * @return il tipo del rapporto che genera, ovvero <strong>SESSO</strong>
      */
     @Override

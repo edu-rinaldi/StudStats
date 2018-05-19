@@ -4,8 +4,8 @@
 /**
  * Fornisce le classi necessarie per:
  *  <ul>
- *      <li>la creazione dei dati</li>
- *      <li>l'analisi dei dati</li>
+ *      <li>la creazione dei dati,</li>
+ *      <li>l'analisi dei dati,</li>
  *      <li>lo storage dei dati in strutture apposite</li>
  *  </ul>
  */

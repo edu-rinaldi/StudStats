@@ -1,21 +1,19 @@
 package it.uniroma1.lcl.studstats;
 
-
+import it.uniroma1.lcl.studstats.dati.*;
+import it.uniroma1.lcl.studstats.util.CSVParser;
+import java.nio.file.Path;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * @author eduardo_rinaldi
  */
 
-import it.uniroma1.lcl.studstats.dati.*;
-import it.uniroma1.lcl.studstats.util.CSVParser;
-
-import java.nio.file.Path;
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 /**
- * La classe Studstats e' un aggregatore statistico
- * che lavora su dati riguardanti gli studenti.
+ * La classe Studstats e' un aggregatore statistico che permette tramite
+ * degli analizzatori l'analisi dei dati degli studenti.
  */
 public class Studstats implements AggregatoreStatistico
 {
@@ -34,14 +32,14 @@ public class Studstats implements AggregatoreStatistico
 
     /**
      * Aggiunge uno studente alla lista studenti.
-     * @param s studente da aggiungere
+     * @param s studente da aggiungere.
      */
     @Override
     public void add(Studente s) {studenti.add(s);}
 
     /**
      * Aggiunge un analizzatore al set di analizzatori.
-     * @param an analizzatore da aggiungere
+     * @param an analizzatore da aggiungere.
      */
     @Override
     public void add(Analizzatore an) {analizzatori.add(an); }
@@ -50,8 +48,8 @@ public class Studstats implements AggregatoreStatistico
      * Genera tutti i rapporti dei tipi specificati, se e solo se,
      * tra gli analizzatori ce n'è uno che possa generare quel
      * tipo di rapporto.
-     * @param tipiRapporto i tipi di cui si vogliono i rapporti
-     * @return una lista con tutti i rapporti generati
+     * @param tipiRapporto i tipi di cui si vogliono i rapporti.
+     * @return una lista con tutti i rapporti generati.
      */
     @Override
     public List<Rapporto> generaRapporti(TipoRapporto... tipiRapporto)
@@ -65,8 +63,8 @@ public class Studstats implements AggregatoreStatistico
     /**
      * Overload del metodo generaRapporti senza parametri,
      * genera rapporti con ogni analizzatore presente nel set
-     * degli analizzatori
-     * @return una lista con tutti i rapporti generati
+     * degli analizzatori.
+     * @return una lista con tutti i rapporti generati.
      */
     public List<Rapporto> generaRapporti()
     {
@@ -76,8 +74,8 @@ public class Studstats implements AggregatoreStatistico
     }
 
     /**
-     *
-     * @return numero degli analizzatori aggiunti
+     * Restituisce il numero degli analizzatori attualmente presenti.
+     * @return numero degli analizzatori aggiunti.
      */
     @Override
     public int numeroAnalizzatori() {return analizzatori.size(); }
@@ -86,7 +84,7 @@ public class Studstats implements AggregatoreStatistico
      * Permette la creazione di una nuova istanza di Studstats, ricevendo
      * come parametro una stringa contenente il path al file <strong>.csv</strong>.
      * Richiama e delega il compito di leggere il file al metodo readFile.
-     * @param file path come String
+     * @param file path come String.
      * @return un oggetto Studstats con dati memorizzati dal file .csv
      */
     public static Studstats fromFile(String file) {return readFile(new CSVParser(file)); }
@@ -95,7 +93,7 @@ public class Studstats implements AggregatoreStatistico
      * Overload del metodo fromFile, fa la stessa cosa ma prende un Path
      * come parametro del metodo, delegando il compito di leggere il file,
      * al metodo readFile.
-     * @param file path come oggetto Path
+     * @param file path come oggetto Path.
      * @return un oggetto Studstats con dati memorizzati dal file .csv
      */
     public static Studstats fromFile(Path file) {return readFile(new CSVParser(file)); }
@@ -105,8 +103,8 @@ public class Studstats implements AggregatoreStatistico
      * e aggiunge i vari studenti presenti nel file letto alla lista studenti.
      * Il metodo viene reso privato perchè è un metodo di utilità per ottenere
      * un riuso del codice migliore su fromFile.
-     * @param parser parser di un file CSV
-     * @return un oggetto Studstats
+     * @param parser parser di un file CSV.
+     * @return un oggetto Studstats.
      */
     private static Studstats readFile(CSVParser parser)
     {
@@ -117,13 +115,13 @@ public class Studstats implements AggregatoreStatistico
     }
 
     /**
-     * @return studenti
+     * @return la lista degli studenti da analizzare.
      */
     public List<Studente> getStudenti() {return studenti;}
 
     /**
      *
-     * @return analizzatori
+     * @return il set contenente tutti gli analizzatori.
      */
     public LinkedHashSet<Analizzatore> getAnalizzatori() {return analizzatori;}
 }

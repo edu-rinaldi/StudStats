@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73355114-7c54-4962-8f65-1cbdadad9c6a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/rapporti/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/util/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/allclasses-frame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/allclasses-noframe.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/constant-values.html" afterDir="false" />
@@ -34,10 +28,10 @@
       <change beforePath="$PROJECT_DIR$/doc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-9.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/AggregatoreStatistico.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/AggregatoreStatistico.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/Main.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/Studstats.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/Studstats.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/Analizzatore.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/Analizzatore.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/AnalizzatoreAnnoDiploma.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/AnalizzatoreAnnoDiploma.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/AnalizzatoreBasic.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/AnalizzatoreBasic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/AnalizzatoreBonus.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/AnalizzatoreBonus.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/AnalizzatoreBonus2.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/AnalizzatoreBonus2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/AnalizzatoreIstituti.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/AnalizzatoreIstituti.html" afterDir="false" />
@@ -50,10 +44,6 @@
       <change beforePath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/Rapporto.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/Rapporto.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/Studente.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/Studente.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/TipoRapporto.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/TipoRapporto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/analizzatori/AnalizzatoreBasic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/analizzatori/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/analizzatori/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/analizzatori/package-tree.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/package-frame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/package-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/it/uniroma1/lcl/studstats/dati/package-tree.html" afterDir="false" />
@@ -73,37 +63,34 @@
       <change beforePath="$PROJECT_DIR$/doc/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/overview-frame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/overview-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/package-list" beforeDir="false" afterPath="$PROJECT_DIR$/doc/package-list" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/package-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/package-search-index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/doc/package-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/doc/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/type-search-index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/doc/type-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/Studstats.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/Studstats.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/AnalizzatoreAnnoDiploma.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/AnalizzatoreAnnoDiploma.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/AnalizzatoreBasic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/AnalizzatoreBasic.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/AnalizzatoreBonus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/AnalizzatoreBonus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/AnalizzatoreBonus2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/AnalizzatoreBonus2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/AnalizzatoreIstituti.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/AnalizzatoreIstituti.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/AnalizzatoreSesso.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/AnalizzatoreSesso.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/AnalizzatoreTitoloDiStudio.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/AnalizzatoreTitoloDiStudio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/analizzatori/AnalizzatoreBasic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/AnalizzatoreVoto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/AnalizzatoreVoto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/Analizzatori.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/Analizzatori.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/Rapporto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/Rapporto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/rapporti/RapportoBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudStats/it/uniroma1/lcl/studstats/dati/rapporti/RapportoBase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/Studstats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/Studstats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/StudstatsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/StudstatsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/.idea/dictionaries/edu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreAnnoDiploma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreAnnoDiploma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreBasic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreBonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreBonus2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreBonus2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreBonus2.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreIstituti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreIstituti.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreSesso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreSesso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreStudentiVotoMaggiore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreStudentiVotoMaggiore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreTitoloDiStudio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreTitoloDiStudio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/analizzatori/AnalizzatoreBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreBasic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreVoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreVoto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/Analizzatori.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/Analizzatori.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/Rapporto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/Rapporto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/Studente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/Studente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/package-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/rapporti/RapportoBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/rapporti/RapportoBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/util/CSVParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/util/CSVParser.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -115,29 +102,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package-info.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/package-info.java">
+      <file leaf-file-name="CSVParser.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/util/CSVParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package-info.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/package-info.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package-info.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/rapporti/package-info.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+            <state relative-caret-position="160">
+              <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -161,8 +130,22 @@
       <list>
         <option value="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/util/package-info.java" />
         <option value="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/package-info.java" />
-        <option value="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/package-info.java" />
         <option value="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/rapporti/package-info.java" />
+        <option value="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/Studstats.java" />
+        <option value="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/rapporti/RapportoBase.java" />
+        <option value="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreBasic.java" />
+        <option value="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/Analizzatori.java" />
+        <option value="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreIstituti.java" />
+        <option value="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreBonus.java" />
+        <option value="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreSesso.java" />
+        <option value="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreStudentiVotoMaggiore.java" />
+        <option value="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreAnnoDiploma.java" />
+        <option value="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreTitoloDiStudio.java" />
+        <option value="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/Rapporto.java" />
+        <option value="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/Studente.java" />
+        <option value="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/package-info.java" />
+        <option value="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreVoto.java" />
+        <option value="$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/util/CSVParser.java" />
       </list>
     </option>
   </component>
@@ -175,7 +158,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -211,15 +194,7 @@
               <item name="StudStats" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="studstats" type="462c0819:PsiDirectoryNode" />
-              <item name="dati" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudStats" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudStats" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="studstats" type="462c0819:PsiDirectoryNode" />
-              <item name="dati" type="462c0819:PsiDirectoryNode" />
-              <item name="rapporti" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -351,7 +326,7 @@
       <option name="presentableId" value="Default" />
       <updated>1526715068800</updated>
       <workItem from="1526715070643" duration="243000" />
-      <workItem from="1526715472542" duration="370000" />
+      <workItem from="1526715472542" duration="3948000" />
     </task>
     <servers />
   </component>
@@ -362,9 +337,24 @@
     <history-entry file="StudstatsTest - 2018.05.19 at 09h 40m 29s.xml">
       <configuration name="StudstatsTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StudstatsTest - 2018.05.19 at 09h 45m 28s.xml">
+      <configuration name="StudstatsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudstatsTest - 2018.05.19 at 10h 01m 31s.xml">
+      <configuration name="StudstatsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudstatsTest - 2018.05.19 at 10h 14m 59s.xml">
+      <configuration name="StudstatsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudstatsTest - 2018.05.19 at 10h 16m 11s.xml">
+      <configuration name="StudstatsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudstatsTest - 2018.05.19 at 10h 40m 56s.xml">
+      <configuration name="StudstatsTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="613000" />
+    <option name="totallyTimeSpent" value="4191000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -380,13 +370,13 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32838285" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32838285" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -407,7 +397,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/Studstats.java" />
     <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/util/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -422,17 +411,164 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/package-info.java">
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/rapporti/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/rapporti/package-info.java">
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/AggregatoreStatistico.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        <state relative-caret-position="-440">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/Analizzatore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/rapporti/RapportoBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreBasic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="2646" column="18" selection-start-line="2646" selection-start-column="18" selection-end-line="2646" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/StudstatsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1780">
+          <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreBonus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="97" column="19" selection-start-line="97" selection-start-column="19" selection-end-line="97" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreSegretoSegretissimo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreSesso.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-621">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreAnnoDiploma.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreStudentiVotoMaggiore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-273">
+          <caret line="54" column="61" selection-start-line="54" selection-start-column="61" selection-end-line="54" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreIstituti.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreTitoloDiStudio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="29" column="61" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/Rapporto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/Analizzatori.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="104" selection-start-line="18" selection-start-column="104" selection-end-line="18" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/Studente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/TipoRapporto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/Studstats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="122" column="6" lean-forward="true" selection-start-line="122" selection-start-column="6" selection-end-line="122" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreBonus2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/AnalizzatoreVoto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/dati/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/uniroma1/lcl/studstats/util/CSVParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
         </state>
       </provider>
     </entry>

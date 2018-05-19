@@ -4,12 +4,13 @@ import it.uniroma1.lcl.studstats.dati.rapporti.RapportoBase;
 
 import java.util.*;
 /**
- * Analizza gli studenti in base all'anno in cui si sono diplomati.
+ * Analizza gli studenti in base all'anno in cui si sono diplomati,
+ * contando quanti studenti si sono diplomati negli anni passati.
  */
 public class AnalizzatoreAnnoDiploma extends AnalizzatoreBasic implements Analizzatore
 {
     /**
-     *
+     * Genera un Rapporto analizzando la collezione di studenti
      * @param studs una collezione di studenti.
      * @return un oggetto Rapporto contenente tutte le info sul rapporto generato
      */
@@ -22,7 +23,7 @@ public class AnalizzatoreAnnoDiploma extends AnalizzatoreBasic implements Analiz
     }
 
     /**
-     *
+     * Restituisce il tipo del rapporto che andrà a generare.
      * @return il tipo del rapporto che genera, ovvero <strong>ANNO_DIPLOMA</strong>
      */
     @Override

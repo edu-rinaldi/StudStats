@@ -8,14 +8,15 @@ import java.util.LinkedHashMap;
 import java.util.Objects;
 
 /**
- * Analizza gli studenti in base al titolo di studio
+ * Analizza gli studenti in base al titolo di studio, contando
+ * gli studenti che hanno acquisito ciascun titolo di studio.
  */
 public class AnalizzatoreTitoloDiStudio extends AnalizzatoreBasic implements Analizzatore
 {
     /**
-     *
+     * Genera un Rapporto analizzando la collezione di studenti.
      * @param studs una collezione di studenti.
-     * @return un oggetto Rapporto contenente tutte le info sul rapporto generato
+     * @return un oggetto Rapporto contenente tutte le info sul rapporto generato.
      */
     @Override
     public Rapporto generaRapporto(Collection<Studente> studs)
@@ -26,7 +27,7 @@ public class AnalizzatoreTitoloDiStudio extends AnalizzatoreBasic implements Ana
     }
 
     /**
-     *
+     * Restituisce il tipo del rapporto che andrà a generare.
      * @return il tipo del rapporto che genera, ovvero <strong>TITOLO</strong>
      */
     @Override

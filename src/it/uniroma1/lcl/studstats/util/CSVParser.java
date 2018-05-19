@@ -14,7 +14,8 @@ import java.util.stream.Stream;
 
 /**
  * @author eduardo_rinaldi
- *
+ */
+/**
  * Parser di file CSV su una Collezione di righe.
  * Queste sono rappresentate come mappe con coppia chiave-valore
  * del tipo {@code <colonna,valore>}, così da ottenere una tabella.
@@ -40,7 +41,7 @@ public class CSVParser
 
 
     /**
-     *
+     * Fa il parse del file, restituendo una collezione di mappe.
      * @return una collezione di mappe, dove ogni mappa è una riga del file
      */
     public Collection<HashMap<String,String>> parseFile()

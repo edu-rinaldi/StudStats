@@ -14,7 +14,7 @@ public class AnalizzatoreIstituti extends AnalizzatoreBasic implements Analizzat
 {
 
     /**
-     *
+     * Genera un rapporto analizzando la collezione di studenti
      * @param studs una collezione di studenti.
      * @return un oggetto Rapporto contenente tutte le info sul rapporto generato
      */
@@ -27,7 +27,7 @@ public class AnalizzatoreIstituti extends AnalizzatoreBasic implements Analizzat
     }
 
     /**
-     *
+     * Restituisce il tipo del rapporto che andrà a generare.
      * @return il tipo del rapporto che genera, ovvero <strong>ISTITUTI</strong>
      */
     @Override

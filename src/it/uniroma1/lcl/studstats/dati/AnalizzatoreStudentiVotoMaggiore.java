@@ -15,10 +15,10 @@ public class AnalizzatoreStudentiVotoMaggiore implements Analizzatore
     private Analizzatore analizzatore;
 
     /**
-     *
+     * Costruisce un oggetto a partire da un votoMinimo e un altro analizzatore.
      * @param votoMinimo parametro usato per filtrare gli studenti che hanno
-     *                   voto {@code >=} votoMinimo
-     * @param analizzatore analizzatore che viene utilizzato
+     *                   voto {@code >=} votoMinimo.
+     * @param analizzatore analizzatore che viene utilizzato.
      */
     public AnalizzatoreStudentiVotoMaggiore(int votoMinimo, Analizzatore analizzatore)
     {
@@ -38,7 +38,7 @@ public class AnalizzatoreStudentiVotoMaggiore implements Analizzatore
     }
 
     /**
-     *
+     * Genera un Rapporto analizzando la collezione di studenti
      * @param studs una collezione di studenti.
      * @return un oggetto Rapporto contenente tutte le info sul rapporto generato
      */
@@ -52,7 +52,7 @@ public class AnalizzatoreStudentiVotoMaggiore implements Analizzatore
     }
 
     /**
-     *
+     * Restituisce il tipo del rapporto che andrà a generare.
      * @return il tipo del rapporto che genera, ovvero <strong>ISTITUTI</strong>
      */
     @Override

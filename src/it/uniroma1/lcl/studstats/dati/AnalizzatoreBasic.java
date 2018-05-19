@@ -7,7 +7,8 @@ import static java.util.stream.Collectors.*;
 /**
  * Classe astratta che definisce come AnalizzatoreBasic
  * ogni analizzatore che deve generare un rapporto basato
- * sulla quantità di certi elementi, non sugli elementi in sè
+ * sulla quantità di certi elementi, non sugli elementi in sè,
+ * andando a raggrupparli per una certa chiave, per poi contarli.
  */
 public abstract class AnalizzatoreBasic
 {

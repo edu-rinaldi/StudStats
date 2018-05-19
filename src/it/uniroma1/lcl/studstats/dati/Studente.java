@@ -15,7 +15,7 @@ public class Studente
     private HashMap<String,String> info;
 
     /**
-     *
+     * Costruisce un oggetto studente a partire da una mappa di informazioni
      * @param info mappa delle informazioni con formato {@code <nomeCampo,valore>}
      */
     public Studente(HashMap<String,String> info) {this.info = info;}
@@ -28,14 +28,14 @@ public class Studente
     public String toString() {return info.toString();}
 
     /**
-     *
+     * Richiama il metodo get della mappa informazioni.
      * @param key campo della mappa
      * @return valore corrispondente al campo
      */
     public String get(String key) { return info.get(key);}
 
     /**
-     *
+     * Restituisce la mappa delle info.
      * @return mappa delle informazioni riguardanti lo studente
      */
     public HashMap<String, String> getInfo() {return info;}

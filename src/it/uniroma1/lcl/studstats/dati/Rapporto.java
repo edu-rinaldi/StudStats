@@ -17,7 +17,7 @@ public class Rapporto
     private HashMap<String, ? extends AbstractMap<String,? extends Number>> rapporto;
 
     /**
-     *
+     * Costruisce un rapporto conoscendo il tipo e la mappa delle informazioni
      * @param tipoRapporto Enum tipo del Rapporto
      * @param rapporto mappa del Rapporto
      */
@@ -36,13 +36,15 @@ public class Rapporto
     public String toString() {return rapporto.toString();}
 
     /**
-     *
+     * Restituisce la mappa contenente le informazioni analizzate.
+     * Questo metodo è public per poter permettere di utilizzare queste
+     * informazioni in classi esterne (es. grafici, gui, etc..)
      * @return la mappa del Rapporto
      */
     public HashMap<String,? extends AbstractMap<String,? extends Number>> getRapporto() {return rapporto;}
 
     /**
-     *
+     * Restituisce il tipo del Rapporto generato.
      * @return tipo del Rapporto
      */
     public TipoRapporto getTipoRapporto() {return tipoRapporto;}

@@ -16,7 +16,7 @@ public interface Analizzatori
         return new AnalizzatoreStudentiVotoMaggiore(voto, a); }
     /* inserire l'eventuale codice dell'analizzatore bonus
        al posto di return Optional.empty() */
-    static Optional<Analizzatore> analizzatoreBonus() {return Optional.of(new AnalizzatoreBonus("NETTUNO")); }
+    static Optional<Analizzatore> analizzatoreBonus() {return Optional.of(new AnalizzatoreBonus("nettuno")); }
     static Analizzatore[] allBasic() { return new Analizzatore[] {
             annoDiploma(), istituti(),
             sesso(), titoloDiStudio(),
