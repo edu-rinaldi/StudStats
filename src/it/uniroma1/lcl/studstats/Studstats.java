@@ -109,7 +109,7 @@ public class Studstats implements AggregatoreStatistico
     private static Studstats readFile(CSVParser parser)
     {
         Studstats stats = new Studstats();
-        new ArrayList<>(parser.parseFile())
+        new ArrayList<>(parser.parseFile(";"))
                 .forEach(mappaStudente-> stats.add(new Studente(mappaStudente)));
         return stats;
     }

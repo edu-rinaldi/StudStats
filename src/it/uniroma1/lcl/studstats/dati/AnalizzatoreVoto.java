@@ -1,6 +1,8 @@
 package it.uniroma1.lcl.studstats.dati;
 
 import it.uniroma1.lcl.studstats.dati.rapporti.RapportoBase;
+
+import java.text.DecimalFormat;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -29,7 +31,9 @@ public class AnalizzatoreVoto implements Analizzatore
      */
     protected static double mediaStudenti(Collection<Studente> studs, Supplier<IntStream> streamVoti)
     {
-        return (double)Math.round(((double)streamVoti.get().sum()/studs.size())*100)/100;
+        return Double.parseDouble(
+                new DecimalFormat("0.00")
+                        .format((double)streamVoti.get().sum()/studs.size()));
     }
 
     /**
